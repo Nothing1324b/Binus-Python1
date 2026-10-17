@@ -1,0 +1,4 @@
+Title: Students fail/pass
+Declaration: score
+Implementation: above 60 pass below 60 fail 
+

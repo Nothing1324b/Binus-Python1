@@ -1,0 +1,21 @@
+Title: temperature conversion
+display: c to f
+         c to k
+         f to c
+         f to k
+         k to c 
+         k to f
+IF choice == 1 THEN
+        result = (temp * 9 / 5) + 32
+    ELSE IF choice == 2 THEN
+        result = temp + 273.15
+    ELSE IF choice == 3 THEN
+        result = (temp - 32) * 5 / 9
+    ELSE IF choice == 4 THEN
+        result = ((temp - 32) * 5 / 9) + 273.15
+    ELSE IF choice == 5 THEN
+        result = temp - 273.15
+    ELSE IF choice == 6 THEN
+        result = ((temp - 273.15) * 9 / 5) + 32
+    ELSE
+ PRINT Result

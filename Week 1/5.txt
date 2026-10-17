@@ -1,0 +1,9 @@
+print("Darren")
+
+print("Indonesian")
+
+print("Student")
+
+print("Indonesian")
+
+print("gaming music sports")
