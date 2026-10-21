@@ -1,0 +1,15 @@
+import math
+try:
+    radius = float(input("radius sphere: "))
+
+    if radius < 0:
+        print("Radius cannot be negative.")
+    else:
+   
+        volume = (4 / 3) * math.pi * (radius ** 3)
+
+        # 3. Display the result rounded to 2 decimal places
+        print(f"sphere with radius {radius} is: {volume:.2f}")
+
+except ValueError:
+    print("Invalid input. Please enter a valid numerical value.")

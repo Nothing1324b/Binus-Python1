@@ -1,0 +1,7 @@
+numbers = input("insert num:")
+new_list = sorted(numbers) 
+
+print(new_list)
+
+new_list_2 = sorted(numbers, reverse =True)
+print(new_list_2)

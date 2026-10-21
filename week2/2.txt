@@ -1,0 +1,12 @@
+import math 
+length = float(input("length:"))
+width = float(input("width:"))
+height = float(input("height:"))
+
+volume = length * width * height
+surface_area = 2 * (length * width + length * height + width * height)
+space_diagonal = math.sqrt(length**2 + width**2 + height**2)
+print("result")
+print(f"Volume: {volume:.2f} cubic units")
+print(f"Total Surface Area: {surface_area:.2f} square units")
+print(f"Space Diagonal: {space_diagonal:.2f} units")

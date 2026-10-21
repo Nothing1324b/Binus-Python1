@@ -1,0 +1,19 @@
+ = float(input(" coefficient a: "))
+b = float(input(" coefficient b: "))
+c = float(input(" coefficient c: "))
+
+if a == 0:
+    print("Coefficient 'a' cannot be 0 in a quadratic equation.")
+else:
+
+    discriminant = (b ** 2) - (4 * a * c)
+
+    print(f"\nThe discriminant is: {discriminant}")
+
+    if discriminant > 0:
+        print("Nature of roots: The equation has two distinct real roots.")
+    elif discriminant == 0:
+        print("Nature of roots: The equation has exactly one real root (repeated root).")
+    else:
+        print("Nature of roots: The equation has no real roots (it has two complex roots).")
+
