@@ -1,0 +1,5 @@
+rows = int(input("Input Max Value: "))
+for i in range(rows,0,-1):  
+    for j in range(i):
+        print(i, end="")
+    print()

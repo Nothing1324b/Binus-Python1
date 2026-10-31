@@ -1,0 +1,14 @@
+repeat = "Y"
+while repeat.upper() == "Y": 
+    user_input = input("Enter any number: ")
+    number = int(user_input)
+
+    if number % 2 == 0:
+        print(f"The number {number} is even")
+    else:
+        print(f"The number {number} is odd")
+
+    repeat = input("Do you want to repeat y/n ")
+
+print("Program Stops")
+print("Thank you for using my program :]")

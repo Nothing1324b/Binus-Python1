@@ -1,0 +1,20 @@
+while True:
+    a = int(input("Enter Side A: "))
+    b = int(input("Enter Side B: "))
+    c = int(input("Enter Side C: "))
+    
+    if a == b == c:
+        print("It is an Equilateral Triangle\n")
+    elif a == b or b == c or a == c:
+        print("It is an Isosceles Triangle\n")
+    else:
+        print("It is a Scalene Triangle\n")
+        
+    repeat = input("Do you want to repeat y/n ")
+    print()
+    
+    if repeat != "y":
+        break
+
+print("Program Stops")
+print("Thank you for using my program :]")

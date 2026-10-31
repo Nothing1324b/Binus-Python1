@@ -1,0 +1,27 @@
+a = int(input(" 1:"))
+b = int(input(" 2:"))
+c = int(input(" 3:"))
+
+if (a + b <= c) or (b + c <= a) or (a + b <= c):
+  print("Invalid Triangle")
+
+else:
+
+  squares = sorted([a**2, b**2, c**2])
+
+  right_angled = round(squares[0] + squares [1], 2) == round(squares[2], 2)
+
+  if a == b == c:
+    print("Equilateral")
+
+  elif a == b or a == c or b == c:
+    if right_angled:
+      print("Right-angled isoceles")
+    else:
+      print("Isoceles")
+
+  else:
+    if right_angled:
+      print("Right-angled triangle")
+    else:
+      print("Scalene Triangle")

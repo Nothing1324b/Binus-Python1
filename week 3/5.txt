@@ -1,0 +1,34 @@
+a = float(input("Value A: "))
+b = float(input("Value B: "))
+c = float(input("Value C: "))
+
+
+if a == 0:
+
+    print("It is not a quadratic equation")
+else:
+    d = (b**2) - (4 * a * c)
+    eq = f"{a}x^2 + {b}x + {c} = 0"
+
+    if d > 0:
+        x1 = (-b + (d**0.5)) / (2 * a)
+        x2 = (-b - (d**0.5)) / (2 * a)
+        print("It has distinct roots")
+        print(eq)
+        print(d)
+        print(x1)
+        print(x2)
+
+    elif d == 0:
+        x1 = -b / (2 * a)
+        print("It has a double root")
+        print(eq)
+        print(d)
+        print(x1)
+
+    else:
+        print("It has imaginary roots")
+        print(eq)
+        print(d)
+        print(f"(-{b} + √{d}) / (2*{a})")
+        print(f"(-{b} - √{d}) / (2*{a})")
