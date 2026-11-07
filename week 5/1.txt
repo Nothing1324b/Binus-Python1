@@ -1,0 +1,60 @@
+def who_this():
+  print("---------------")
+  print("| Darren Indo |")
+  print("---------------")
+
+def addition( val1, val2):
+        num_yes = val1 + val2
+        return num_yes
+
+def subtraction( val1 , val2):
+        num_yes = val1 - val2
+        return num_yes
+
+def multiplication( val1 , val2):
+        num_yes = val1 * val2
+        return num_yes
+
+def division( val1 , val2):
+        num_yes = val1 / val2
+        return num_yes
+        
+def modulo( val1 , val2):
+        num_yes = val1 % val2
+        return num_yes      
+
+who_this()
+
+while True:
+    menu = input("Enter Menu (+|-|/|*|%|stop): ")
+
+    if menu == "stop":
+        print("program has stopped thanks")
+        break
+
+    if menu not in ["+", "-", "*", "/", "%"]:
+        print("oi pick a an option\n")
+        continue
+
+    val1 = int(input("enter value 1: "))
+    val2 = int(input("enter value 2: "))
+
+    if menu == "+":
+        result = addition(val1, val2)
+        print(f"The result of addition {val1} + {val2} is {result}")
+        
+    elif menu == "-":
+        result = subtraction(val1, val2)
+        print(f"The result of subtraction {val1} - {val2} is {result}")
+        
+    elif menu == "*":
+        result = multiplication(val1, val2)
+        print(f"The result of multiplication {val1} * {val2} is {result}")
+        
+    elif menu == "/":
+        result = division(val1, val2)
+        print(f"The result of division {val1} / {val2} is {result}")
+        
+    elif menu == "%":
+        result = modulo(val1, val2)
+        print(f"The result of modulus {val1} % {val2} is {result}")
