@@ -1,0 +1,22 @@
+from abc import ABC, abstractmethod
+
+class PaymentMethod(ABC):
+    @abstractmethod
+    def pay(self, amount):
+        pass
+
+class CreditCard(PaymentMethod):
+    def pay(self, amount):
+        print(f"Paid ${amount} using Credit Card.")
+
+class EBanking(PaymentMethod):
+    def pay(self, amount):
+        print(f"Paid ${amount} using E-Banking.")
+
+payments = [
+    (CreditCard(), 50),
+    (EBanking(), 50)
+]
+
+for method, amount in payments:
+    method.pay(amount)

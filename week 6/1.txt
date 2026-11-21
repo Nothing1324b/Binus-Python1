@@ -1,0 +1,18 @@
+class Student:
+    def __init__(self, name, student_id, major):
+        self.name = name
+        self.student_id = student_id
+        self.major = major
+
+    def display_biodata(self):
+        print("\n--- Student Biodata ---")
+        print(f"Name       : {self.name}")
+        print(f"Student ID : {self.student_id}")
+        print(f"Major      : {self.major}")
+
+name_input = input("Enter student name: ")
+id_input = input("Enter student ID: ")
+major_input = input("Enter student major: ")
+
+student1 = Student(name_input, id_input, major_input)
+student1.display_biodata()
